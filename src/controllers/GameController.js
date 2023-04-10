@@ -3,9 +3,9 @@
 const game = require("./models/ModelGame.js")
 
 const gameInit = (req, res) => {
-    game.gameState(err, game.gameState) =>{
-        res.status(200)
-    }
+    game.gameState((err, gameState) => {  
+        res.status(200).json(gameState)
+    }) 
 }
 
 
