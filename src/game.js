@@ -4,19 +4,19 @@
 
 // Jogador
 class player {
-    constructor(name){
-        this.name = name;
-    }
+    // constructor(name){
+    //     this.name = name;
+    // }
     credits = 10;     
 }
 
 // Novo jogador
-const bernardo = new player("bernardo") 
+const bernardo = new player() 
 
 
 // Jogo
 function game (player) {
-
+        
         let gameState = false;
         
         function roll (player){
@@ -54,20 +54,28 @@ function game (player) {
         }
 
         let cheatCount = 0;
+        let lessThan40 = true;
+        let moreThan60 = false;
 
         if(player.credits > 0){
             roll(player)
         
         } else if (player.credits > 0 && player.credits < 40) {
+
+            
             if (Math.random() < 0.3){
                 roll(player)
-
+                
                 // No cost spin 
                 player.credits += 1;
                 cheatCount += 1;
             }
         
         } else if (player.credits > 60) {
+
+            lessThan40 = false;
+            moreThan60 = true;
+
             if(Math.random() < 0.6){
                 roll(player)
 
@@ -105,6 +113,8 @@ function game (player) {
 
                 rl.close();
                 });
+
+
             
     }
 }    
