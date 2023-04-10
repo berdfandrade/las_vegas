@@ -44,7 +44,7 @@ Node best practices
 Design: A well thought out API and UI components that can be communicated with others.
 Correctness: does the solution perform in sensible, thought-out ways?
 Maintainability: is the code written in a clean, maintainable way?
-BONUD - Testing: was the system adequately tested?
+BONUS - Testing: was the system adequately tested?
 CodeSubmit
 Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
 

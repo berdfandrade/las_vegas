@@ -1,13 +1,15 @@
 
-import game from "../models/Game.js"
 
+const game = require("./models/ModelGame.js")
 
-class PlayGame {
-    static initGame = (req, res) => {
-        game.save((err, game) => {
-            res.status(200).json(game)
-        })
+const gameInit = (req, res) => {
+    game.gameState(err, game.gameState) =>{
+        res.status(200)
     }
 }
 
-PlayGame.initGame
+
+gameInit.save(); 
+
+// There is a cash-out endpoint which moves 
+// credits from the game session to user's account and closes the session.

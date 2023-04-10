@@ -10,8 +10,10 @@ class player {
     credits = 10;     
 }
 
+
+
 // Novo jogador
-const bernardo = new player() 
+const bernardo = new player(); 
 
 
 // Jogo
@@ -114,11 +116,12 @@ function game (player) {
                 rl.close();
                 });
 
-
+                
             
     }
 }    
 
 game(bernardo)
+
 
 

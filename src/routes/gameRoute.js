@@ -7,7 +7,7 @@ const router = express.Router();
 
 router
     .get("/game", game.getGame)
-    .put("/userState", user.sendCurrentState)
+    .put("/game", user.sendCurrentState)
 
     
 export default router; 
